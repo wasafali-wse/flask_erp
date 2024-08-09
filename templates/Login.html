@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login page</title>
+	<link rel= "icon" href="/static/WSE_LOGO.ico">
+	<link rel="stylesheet"
+		href="/static/stylesheet.css">
+                   
+</head>
+
+<body>
+	<div class="main">
+
+        <img src="/static/wse_name.jpeg" alt="Image" class="logo">
+		<h1>Login Form</h1>
+		
+		<form action="" method="POST">
+			<label for="first">
+				Username:
+			</label>
+			<input type="text"
+				id="first"
+				name="first"
+				placeholder="Enter your Username" 
+				required autocomplete="current-password">
+
+			<label for="password">
+				Password:
+			</label>
+			<input type="password"
+				id="password"
+				name="password"
+				placeholder="Enter your Password" required autocomplete="current-password">
+
+			<div class="wrap">
+				<button type="submit"
+						onclick="solve()">
+					Submit
+				</button>
+			</div>
+		</form>
+		<p>Not registered? 
+			<a href="{{ url_for('register') }}" style="text-decoration: none;">
+				Create an account
+			</a>
+		</p>
+	</div>
+</body>
+
+</html>
